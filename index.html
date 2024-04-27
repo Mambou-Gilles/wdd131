@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WDD 131 - Dynamic Web Fundamentals - Elie Gilles Ravel Mambou</title>
+   <meta name="description" content="WDD 131 - Dynamic Web Fundamentals course page by Elie Gilles Ravel Mambou. Covering HTML basics, CSS styling, JavaScript programming, and responsive web design techniques.">
+   <meta name="author" content="Elie Gilles Ravel Mambou">
+   <link rel="stylesheet" href="styles/bases.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+   
+</head>
+<body>
+   <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Elie Gilles Ravel Mambou</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/elie-gilles-ravel-mambou-67a2b918a/">LinkedIn</a>
+            <a href="https://byui.instructure.com/.">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/9?lang=eng&id=p13-p14#p13">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+   
+   <main>
+
+    <section class="card">
+        <h2>About Me</h2>
+
+        <div class="first-card">
+            <div id="intro">
+                <p>
+                    I'm Elie from Congo-Brazzaville, now living in South Africa 
+                    with my wife, Matsiu from Lesotho, and our son, Kolob. 
+                    I hold a Bachelor's in Computer Information Technology 
+                    from BYU-Idaho and am pursuing further studies in Software Development, 
+                    aiming to become a Web Programmer or Full-Stack Developer.
+                     I enjoy movies, music, and football.</p>
+                <img src="images/intro-pic.webp" alt="my image" loading="lazy" width="250" height="200" >
+            </div>
+            <h3>Johannesburg, South Africa</h3>
+            <hr>
+            <div id="country">
+                
+                <figure>
+                    <img src="images/flag.webp" alt="my image" loading="lazy" width="250" height="200" >
+                
+                    <figcaption>Official Flag of South Africa</figcaption>
+                </figure>
+                <p>
+                    South Africa, known as the "Rainbow Nation," 
+                    blends stunning landscapes and vibrant cities like Johannesburg and Cape Town
+                     with a rich cultural tapestry. Celebrated for its diversity and historical resilience
+                      against apartheid, it offers visitors a mix of scenic beauty, wildlife safaris, 
+                      and a thriving arts and culinary scene.
+                </p>
+                        
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="card">
+        
+        <h2>Web Dev Resources</h2>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.w3schools.com/" target="_blank" title="W3Schools">W3Schools</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank" title="MDN Web Docs">MDN Web Docs</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank" title="freeCodeCamp">freeCodeCamp</a></li>
+                    <li><a href="https://cssreference.io/" target="_blank" title="CSS reference">CSS Reference</a></li>
+                    <li><a href="https://dev.to/iamismile/web-development-resources-96" target="_blank" title="Web Dev Resources">List for all Web Dev Resources</a></li>
+                </ul>
+            </div>
+        
+    </section>
+
+   </main>
+   <footer>
+        <p>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
