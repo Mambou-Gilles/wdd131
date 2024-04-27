@@ -1,4 +1,4 @@
-body {
+/* body {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 250px;
@@ -49,4 +49,62 @@ body {
     padding: 16px;
   }
   
+   */
+
+   body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 250px; /* Keep the sidebar width fixed and the main content flexible */
+    grid-template-rows: auto 1fr 300px; /* Allocate sufficient space for the header, flexible space for the main content, and a fixed height for the footer */
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer";
+  }
+  
+  header, main, aside, footer {
+    padding: 1rem;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    grid-area: header;
+  }
+  
+  nav {
+    background-color: #000;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+    text-align: center;
+    flex: 1 1 auto;
+  }
+  
+  main {
+    background: #ccc;
+    grid-area: main;
+  }
+  
+  aside {
+    grid-area: aside;
+    background: #e4e4e4; /* Adding a different background to distinguish from the main content */
+  }
+  
+  footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    grid-area: footer;
+  }
   
