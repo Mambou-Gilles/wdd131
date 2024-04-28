@@ -1,6 +1,6 @@
 *{box-sizing: border-box;}
 body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Roboto", sans-serif;
     max-width: 1300px;
     margin:0 auto;
 }
@@ -84,9 +84,10 @@ main {
 
 #intro p {
     flex: 1; 
-    max-width: auto;
+    max-width: fit-content;
     margin-left: 20px; 
     font-size:20px;
+    font-family: 'Josefin', sans-serif;
 }
 
 #intro img {
@@ -108,8 +109,9 @@ main {
 #country p {
     flex: 1; 
     margin-right: 20px; 
-    width: auto-fit;
+    width: fit-content;
     font-size:20px;
+    font-family: 'Josefin', sans-serif;
 }
 
 #country img {
@@ -148,6 +150,7 @@ main {
     justify-content: center;
     align-items: center;
     font-size:20px;
+    font-family: 'Josefin', sans-serif;
     
   }
 
