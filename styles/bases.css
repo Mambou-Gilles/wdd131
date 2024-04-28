@@ -19,7 +19,7 @@ header nav{
 }
 
 h3 {text-align: center}
-header nav a{
+header nav a {
     display: block;
     align-items: center;
     justify-content: center;
@@ -32,13 +32,19 @@ header nav a{
     flex: 1 1 auto;
 }
 
-header nav {
+nav a:hover {
+    cursor:pointer;
+    color: #3498db;         
+    text-decoration: underline; 
+    background-color: #f0f0f0;  
+
+/* header nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: black;
     margin-top: 0;
-  }
+  } */
   
  figcaption {text-align: center; }
 
