@@ -1,5 +1,6 @@
 *{box-sizing: border-box;}
 body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1300px;
     margin:0 auto;
 }
@@ -39,7 +40,7 @@ header nav {
     margin-top: 0;
   }
   
- figcaption { text-align:center;}
+ figcaption {text-align: center; }
 
 main {
     max-width: 100%;
@@ -50,9 +51,7 @@ main {
     padding: 0 20px;
     margin-top:20px;
     margin-bottom:20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    
+    font-size: 16px;
 }
 
 .card h2 {
@@ -78,8 +77,9 @@ main {
 
 #intro p {
     flex: 1; 
-    max-width:fit-content;
+    max-width: auto;
     margin-left: 20px; 
+    font-size:20px;
 }
 
 #intro img {
@@ -101,7 +101,8 @@ main {
 #country p {
     flex: 1; 
     margin-right: 20px; 
-    width: fit-content;
+    width: auto-fit;
+    font-size:20px;
 }
 
 #country img {
@@ -139,6 +140,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size:20px;
     
   }
 
@@ -149,7 +151,6 @@ footer {
     background-color: aqua;
     padding: 30px;
     font-size: 30px;
-    font-weight: bold;
     
 }
 
