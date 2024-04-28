@@ -36,7 +36,8 @@ nav a:hover {
     cursor:pointer;
     color: #3498db;         
     text-decoration: underline; 
-    background-color: #f0f0f0;  
+    background-color: #f0f0f0; 
+}
 
 /* header nav {
     display: flex;
