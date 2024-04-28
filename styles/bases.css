@@ -1,8 +1,5 @@
 *{box-sizing: border-box;}
 body{
-    font-family:'Josephin', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
     max-width: 1300px;
     margin:0 auto;
 }
@@ -53,6 +50,9 @@ main {
     padding: 0 20px;
     margin-top:20px;
     margin-bottom:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    
 }
 
 .card h2 {
@@ -78,7 +78,7 @@ main {
 
 #intro p {
     flex: 1; 
-    max-width: auto;
+    max-width:fit-content;
     margin-left: 20px; 
 }
 
@@ -101,7 +101,7 @@ main {
 #country p {
     flex: 1; 
     margin-right: 20px; 
-    width: auto-fit;
+    width: fit-content;
 }
 
 #country img {
@@ -148,6 +148,8 @@ footer {
     text-align: center;
     background-color: aqua;
     padding: 30px;
+    font-size: 30px;
+    font-weight: bold;
     
 }
 
