@@ -6,8 +6,8 @@
 
 h1 {
 	text-align: left;
-	font-family: "Roboto", sans-serif;
-	font-size: 1.5rem;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 2rem;
 	margin-left: 1rem;
 }
 
@@ -38,7 +38,11 @@ header {
 }
 
 #menu.open::before {
-	content: "❌";
+	content: "X";
+	font-weight: bold;
+	font-size: 3rem;
+	color: red;
+	cursor: pointer;
 }
 
 .navigation {
@@ -54,11 +58,12 @@ header {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
+	
 }
 .navigation a:hover {
 	background-color: #bbb;
 	color: #333;
-	font-weight: 700;
+	/* font-weight: 700; */
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -93,7 +98,7 @@ img {
 }
 
 figcaption {
-    font-size:medium;
+    font-size:large;
     text-align: center;
 }
 
