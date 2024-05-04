@@ -1,0 +1,112 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: left;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: navy;
+	text-align: center;;
+	margin: 1rem;
+}
+
+/* small view navigation */
+header {
+    background-color:blueviolet;
+    padding: 10px;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+	position: absolute;
+	top: 0;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+.hide {
+    display: none;
+}
+
+/* MAIN */
+main {margin: 1rem auto; max-width: 960px;}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 25px;
+    place-items: center;
+    margin: 0 auto; /* Center the grid horizontally */
+}
+
+figure {
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 20px 20px;
+}
+
+figcaption {
+    font-size:medium;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: blueviolet;
+    padding: 30px;
+    font-size: 30px;
+    
+}
