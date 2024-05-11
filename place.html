@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Country or Place</title>
+   <meta name="description" content="Country or Place">
+   <meta name="author" content="Elie Gilles Mambou">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+   <header><h1>NAME OF THE COUNTRY</h1></header>
+   
+   <main>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width:1200px)" srcset="images/hero.webp">
+                <source media="(min-width: 600px)" srcset="images/south-medium.webp">
+                <img src="images/hero-sa-small.webp" alt="Art images of Nelson Mandela from South Africa" width="600">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            
+            <div class="data-pair">
+              <div class="col-key">Area:</div>
+              <div class="col-value">1.22 million km²</div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Population:</div>
+              <div class="col-value">59.89M (2022)</div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Capital:</div>
+              <div class="col-value">
+                <select id="capital-dropdown">
+                  <option value="capetown">Capetown</option>
+                  <option value="bloemfontein">Bloemfontein</option>
+                  <option value="pretoria">Pretoria</option>
+                </select>
+              </div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Languages:</div>
+              <div class="col-value">
+                <select id="languages-dropdown">
+                  <option value="afrikaans">Afrikaans</option>
+                  <option value="english">English</option>
+                  <option value="zulu">Zulu</option>
+                  <option value="southern-sotho">Southern Sotho</option>
+                  <option value="northern-sotho">Northern Sotho</option>
+                  <option value="venda">Venda</option>
+                  <option value="swati">Swati</option>
+                  <option value="xhosa">Xhosa</option>
+                  <option value="tswana">Tswana</option>
+                  <option value="tsonga">Tsonga</option>
+                  <option value="ndebele">Ndebele</option>
+                  <option value="south-african-sign">South African Sign Language</option>
+                </select> </div>                    
+            </div>
+            <div class="data-pair">
+                <div class="col-key ">Currency:</div>
+                <div class="col-value"><span class="currency"></span></div>
+            </div>
+            <div class="data-pair">
+                <div class="col-key">Time Zone:</div>
+                <div class="col-value">GMT+2</div>
+            </div>
+            <div class="data-pair">
+                <div class="col-key">Country Code:</div>
+                <div class="col-value">+27</div>
+            </div>
+            <div class="data-pair">
+                <div class="col-key">Internet TLD:</div>
+                <div class="col-value">.za</div>
+            </div>
+          </section>
+          <section class="weather">
+            <h2>Weather</h2>
+            <img class="weather-icon" src="images/partly-cloudy.svg" alt="Weather Sunny and cloudy">
+            <div class="data-pair">
+              <div class="col-key">Temperature:</div>
+              <div class="col-value">-5</div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Conditions:</div>
+              <div class="col-value">Partly Cloudy</div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Wind:</div>
+              <div class="col-value">10</div>
+            </div>
+            <div class="data-pair">
+              <div class="col-key">Wind Chill:</div>
+              <div class="col-value value"></div>
+            </div>
+          </section>
+   </main>
+   <footer>
+    <div>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa</div>
+    <div id="lastModified"></div>
+   </footer>
+   <script src="scripts/place.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+</body>
+</html>

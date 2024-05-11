@@ -1,0 +1,133 @@
+:root{
+    --primary-color: #0d0d0c;
+    --secondary-color: #fff; 
+    --primary-font: "Roboto";
+}
+
+
+body {
+    margin: 0; 
+    text-align: center;
+    min-height: 100vh;
+    
+  }
+  .col-key, .col-value, p {
+    font-family: var(--primary-font);
+  }
+  header, footer {
+    background-color: var(--primary-color);
+    padding: 5px;
+  }
+  h1{
+    color: var(--secondary-color);
+  }
+  
+  /* .hero-image {
+    overflow: hidden; 
+  } */
+  
+  img {
+    display: block;
+    width: 100%;
+    margin: 0; 
+  }
+
+/* Data Sections */
+
+.data {
+    display: block;
+    margin: 0 auto;
+    width:fit-content;
+    
+}
+
+.data-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define columns */
+    /* align-items: center; */
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .data-pair .col-key {
+    text-align: right;
+  }
+  
+  .data-pair .col-value {
+    text-align: left;
+    
+  }
+  .col-value .currency::before {
+    content: "South Africa Rand (ZAR)";
+  }
+
+  .weather-icon {
+    width: fit-content;
+    height: fit-content;
+    margin:0 40%;
+  }
+  
+
+
+  footer {
+    flex-grow: 1;
+  }
+
+  footer div {
+    color: var(--secondary-color);
+    
+  }
+
+
+  @media screen and (min-width: 715px) { 
+    body {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hero-image img{
+        height: 80vh;
+    }
+    .data {
+        position: absolute;
+        top: 16%;
+        left: 4%;
+        background-color: yellow;
+        border: 1px solid red;
+        width: 30%;
+    }
+    
+    #languages-dropdown{
+        width: 100px;
+    }
+    
+    .col-value .currency::before {
+        content: ""; /* Base content */
+      }
+        .col-value .currency::after {
+          content: "ZAR"; /* Content for large screens */
+        }
+
+    .weather {
+        position: absolute;
+        bottom: 16%;
+        right: 5%;
+        background-color: yellow;
+        padding: 20px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+
+
+    .weather h2::after {
+        content:" ⛅";
+    }
+
+    footer div {
+        font-size: 2rem;
+      }
+
+  }
