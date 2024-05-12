@@ -1,6 +1,6 @@
 
-const temperature = -5; // °C
-const windSpeed = 10;  // km/h
+const temperature = 10; // °C
+const windSpeed = 13;  // km/h
 
 function calculateWindChill(temp, wind) {
    return 13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16);

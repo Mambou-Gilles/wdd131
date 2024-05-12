@@ -2,6 +2,7 @@
     --primary-color: #0d0d0c;
     --secondary-color: #fff; 
     --primary-font: "Roboto";
+    --primary-size: 1.3rem;
 }
 
 
@@ -13,6 +14,7 @@ body {
   }
   .col-key, .col-value, p {
     font-family: var(--primary-font);
+    font-size: var(--primary-size);
   }
   header, footer {
     background-color: var(--primary-color);
@@ -75,14 +77,14 @@ body {
 
   footer div {
     color: var(--secondary-color);
+    font-size: 1.3rem;
     
   }
 
-
-  @media screen and (min-width: 715px) { 
+  @media screen and (min-width: 850px) { 
     body {
         position: relative;
-        max-width: 900px;
+        max-width: 1000px;
         margin: 0 auto;
     }
 
@@ -94,9 +96,9 @@ body {
         top: 16%;
         left: 4%;
         background-color: yellow;
-        border: 1px solid red;
-        width: 30%;
+        width: 35%;
     }
+    
     
     #languages-dropdown{
         width: 100px;
