@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Product Review</title>
+   <meta name="description" content="Product Review">
+   <meta name="author" content="Elie Gilles Mambou">
+   <link rel="stylesheet" href="styles/product-review.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header><h1>Product Review</h1></header>
+
+    <main>
+        <form id="reviewForm" method="get" action="review.html">
+            <!-- Product Name -->
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ...</option>
+            </select>
+
+            <!-- Overall Rating -->
+            <label id="overall">Overall Rating</label>
+            <div class="rating" id="stars">
+                <div class="star-radio-pair">
+                    <label for="rating1">☆</label>
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                </div>
+                <div class="star-radio-pair">
+                    <label for="rating2">☆☆</label>
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </div>
+                <div class="star-radio-pair">
+                    <label for="rating3">☆☆☆</label>
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </div>
+                <div class="star-radio-pair">
+                    <label for="rating4">☆☆☆☆</label>
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </div>
+                <div class="star-radio-pair">
+                    <label for="rating5">☆☆☆☆☆</label>
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </div>
+            </div>
+
+            <!-- Date of Installation -->
+            <label for="installationDate">Date of Installation:</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <!-- Useful Features -->
+            <label>Which features did you find useful in the product?<br>
+            <i>(Check all that applly)</i></label>
+            <div id="check">
+                   
+                <label for="feature1"> <input type="checkbox" id="feature1" name="durability" value="Durability"> Durability</label>                      
+                <label for="feature2"><input type="checkbox" id="feature2" name="ease of use" value="Ease of Use"> Ease of Use</label>       
+                <label for="feature3"><input type="checkbox" id="feature3" name="performance" value="Performance"> Performance</label>
+                <label for="feature1"> <input type="checkbox" id="feature1" name="design" value="Design"> Design</label>                      
+            </div>
+
+                <!-- Written Review -->
+                <label for="review">Written Review <span>(Optional)</span></label>
+                <textarea id="review" name="review"></textarea>
+
+                <!-- User Name -->
+                <label for="name">Your Name <span>(Optional)</span></label>
+                <input type="text" id="name" name="name">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </form>
+    </main>
+
+   <footer>
+    <p>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa</p>
+    <p id="lastModified"></p>
+    </footer>
+   <script src="scripts/product-review.js" defer></script>
+   <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
