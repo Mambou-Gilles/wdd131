@@ -188,13 +188,14 @@ body {
     margin: 0 30%;
   }
   
-  .navigation a {
+  .navigation a, #genres-dropdown {
       display: none;
       padding: 1rem;
       text-align: center;
       text-decoration: none;
       color: #fff;
     margin-top: 10px;
+    width: auto;
   }
   
   .navigation a:hover {
@@ -213,18 +214,18 @@ body {
   
   /* Large view navigation */
 
-  @media screen and (min-width: 851px) {
-    .navigation a {
+  /* @media screen and (min-width: 933px) {
+    .navigation a, .navigation #genres-dropdown {
         display: block;
-          margin-left: 10px; /* Add some spacing between links */
+          margin-left: 10px;
           text-decoration: none;
           width: auto;
 
       }
 
 
-  }
-  @media screen and (min-width: 850px) {
+  } */
+  @media screen and (min-width: 933px) {
       
       #menu {
           display: none; /* Hide hamburger button */
@@ -245,11 +246,12 @@ body {
       }
   
       /* Adjust individual link styles if needed */
-      .navigation a {
+      .navigation a, .navigation #genres-dropdown {
         display: block;
           margin-left: 10px; /* Add some spacing between links */
           text-decoration: none;
   /*         color: #333; */
+          width: auto;
       }
   
       
