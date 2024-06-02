@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final Project | MovieHub</title>
+   <meta name="description" content="MovieHub App ">
+   <meta name="author" content="Elie Gilles Mambou">
+   <link rel="stylesheet" href="styles/recommend.css">
+   <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MovieHub</a></h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+        <button id="menu"></button>
+        <nav class="navigation" id="nav">
+            <a id="top10-button">Top 10 Movies</a>
+            <a><select id="genres-dropdown">
+                <option value="" disabled selected>Genres</option>
+                <option value="28">Action</option>
+                <option value="35">Comedy</option>
+                <option value="18">Drama</option>
+                <option value="27">Horror</option>
+                <!-- Add more genres as needed -->
+              </select></a>
+            <a href="recommend.html" >Recommendation</a>
+            <a href="index.html" id="home-button">Home</a>
+        </nav>
+    </header>
+    <main>
+        <form id="movie-recommendation-form" method="get" action="recommended-movies.html">
+            <fieldset>
+                <legend>Movie Preferences</legend>
+                <label for="genre">Select Genre:</label>
+                <select id="genre" name="genre" required>
+                    <option value="" disabled selected>Add A Genre</option>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="horror">Horror</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="other">Others</option>
+
+                </select>
+                <label for="Email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email required">
+    
+                <label for="release-year">Release Year:</label>
+                <input type="text" id="release-year" name="release-year" placeholder="Enter release year (optional)">
+    
+                <label for="rating">Minimum Rating:</label>
+                <input type="text" id="rating" name="rating" placeholder="Enter minimum rating (optional)">
+            </fieldset>
+    
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </main>
+   <footer>
+    <p>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa | <a href="../siteplan.html">Go to <strong>Siteplan</strong> page</a></p>
+        
+        <p id="lastModified"></p>
+   </footer>
+   <script src="scripts/recommend.js" defer></script>
+   <script src="scripts/script.js" defer></script>
+   <script src="../scripts/getdates.js" defer></script>
+</body>
+</html>

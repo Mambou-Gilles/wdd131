@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final Project | MovieHub</title>
+   <meta name="description" content="MovieHub App ">
+   <meta name="author" content="Elie Gilles Mambou">
+   <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MovieHub</a></h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+        <button id="menu"></button>
+        <nav class="navigation" id="nav">
+            <a id="top10-button">Top 10 Movies</a>
+            <a><select id="genres-dropdown">
+                <option value="" disabled selected>Genres</option>
+                <option value="28">Action</option>
+                <option value="35">Comedy</option>
+                <option value="18">Drama</option>
+                <option value="27">Horror</option>
+                
+              </select></a>
+            <a href="recommend.html" >Recommendation</a>
+            <a href="index.html" id="home-button">Home</a>
+        </nav>
+    </header>
+    <main>
+            
+        <h2>Thank you for sharing your Movie Preferences!</h2>
+        <p>We are thrilled to receive your favorite genres and preferences. Our team is working diligently to find the best movie recommendations just for you. You will receive a personalized recommendation link shortly.</p>
+        <p>Stay tuned, and get ready for an exciting cinematic journey!</p>
+        <p>In the meantime, why not grab some popcorn and prepare for a great movie night ahead?</p>
+            <div id="reviewCounter"></div>
+    </main>
+   <footer>
+    <p>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa | <a href="../siteplan.html">Go to <strong>Siteplan</strong> page</a></p>
+        
+        <p id="lastModified"></p>
+   </footer>
+   <script src="scripts/script.js" defer></script>
+   <script src="../scripts/getdates.js" defer></script>
+</body>
+</html>

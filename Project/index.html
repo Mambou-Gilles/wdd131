@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Final Project | MovieHub</title>
+   <meta name="description" content="MovieHub App ">
+   <meta name="author" content="Elie Gilles Mambou">
+   <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">MovieHub</a></h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for movies...">
+            <button id="search-button">Search</button>
+        <button id="menu"></button>
+        <nav class="navigation" id="nav">
+            <a id="top10-button">Top 10 Movies</a>
+            <a><select id="genres-dropdown">
+                <option value="" disabled selected>Genres</option>
+                <option value="28">Action</option>
+                <option value="35">Comedy</option>
+                <option value="18">Drama</option>
+                <option value="27">Horror</option>
+                <!-- Add more genres as needed -->
+              </select></a>
+            <a href="recommend.html" >Recommendation</a>
+            <a id="home-button">Home</a>
+        </nav>
+    </header>
+    <main>
+        <div id="movie-display"></div>
+        <div id="pagination">
+            <button id="prev-button">Previous</button>
+            <button id="next-button">Next</button>
+        </div>
+    </main>
+   <footer>
+        <p>&copy; <span id="currentyear"></span> | Elie Gilles Ravel Mambou | South Africa | <a href="../siteplan.html">Go to <strong>Siteplan</strong> page</a></p>
+        <p id="lastModified"></p>
+   </footer>
+   <script src="scripts/script.js" defer></script>
+   <script src="../scripts/getdates.js" defer></script>
+</body>
+</html>

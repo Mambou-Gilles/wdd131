@@ -1,0 +1,256 @@
+
+/* Add your desired styles here */
+
+body {
+    font-family: Arial, sans-serif;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+
+  header, footer {
+        background-color: #f2f2f2;
+        padding: 20px;
+
+  }
+  footer{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  h1 {
+    margin: 0;
+    align-self: center;
+    /* font-size: 50px; */
+    font-size: 2.5em;
+  }
+  h1 a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search-container button, .search-container a {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .search-container button:hover, .search-container a:hover {
+    background-color: #000;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #genre-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #movie-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .movie-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .movie-card .overlay {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: top 0.3s ease-in-out;
+    overflow-y: auto;
+    max-height: 80%;
+  }
+  
+  .movie-card:hover .overlay {
+    top: 0;
+  }
+  
+  .movie-card .overlay-content {
+    padding: 10px;
+  }
+  
+  #pagination {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #pagination button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  #pagination button:hover {
+    background-color: #000;
+  }
+  
+  
+  /* Add to your existing styles.css file */
+  .search-container select {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  /* Optional: Style the dropdown arrow manually */
+  
+  #menu {
+      font-size: 1.5rem;
+      border: none;
+      background: #4CAF50;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #menu::before {
+      content: "☰";
+    color: #000;
+  }
+  
+  #menu.open::before {
+      content: "X";
+      font-weight: bold;
+      font-size: 3rem;
+      top: 0;
+  }
+  
+  #menu {
+      font-size: 1.5rem;
+      border: none;
+      background: none;
+      color: #ffffff;
+      position: absolute;
+      top: 0;
+      right: 1rem;
+      cursor: pointer;
+  }
+  
+  #menu::before {
+      content: "☰";
+  }
+  
+  #menu.open::before {
+      content: "X";
+      font-weight: bold;
+      font-size: 3rem;
+      color: red;
+    padding-bottom: 50px;
+  }
+  
+  .navigation {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+    width: 50%;
+    margin: 0 30%;
+  }
+  
+  .navigation a {
+      display: none;
+      padding: 1rem;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+    margin-top: 10px;
+  }
+  
+  .navigation a:hover {
+      background-color: #000;
+      color: #fff;
+  }
+  
+  /* Show navigation links when the menu is open */
+  .open a {
+      display: block;
+  }
+  
+  .hide {
+      display: none;
+  }
+  
+  /* Large view navigation */
+
+  @media screen and (min-width: 851px) {
+    .navigation a {
+        display: block;
+          margin-left: 10px; /* Add some spacing between links */
+          text-decoration: none;
+          width: auto;
+
+      }
+
+
+  }
+  @media screen and (min-width: 850px) {
+      
+      #menu {
+          display: none; /* Hide hamburger button */
+      }
+  
+      /* Position navigation links on top-right corner */
+      .navigation {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 10px;
+  /*         background-color: #f2f2f2; */
+          padding: 10px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+       
+      }
+  
+      /* Adjust individual link styles if needed */
+      .navigation a {
+        display: block;
+          margin-left: 10px; /* Add some spacing between links */
+          text-decoration: none;
+  /*         color: #333; */
+      }
+  
+      
+  }
